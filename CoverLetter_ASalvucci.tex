@@ -1,0 +1,143 @@
+%------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%------------------------------------------------------------------------
+\newcommand*{\TEXPATH}{classes/}
+\documentclass[11pt, a4paper]{\TEXPATH awesome-cv} 
+\usepackage[english]{babel}
+
+% Configure page margins with geometry
+\geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm} 
+ 
+\fontdir[fonts/] % Specify the location of the included fonts
+
+% Color for highlights
+\colorlet{awesome}{awesome-emerald} % Default colors include: awesome-emerald,
+%awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis,
+%awesome-concrete, awesome-darknight
+
+% Uncomment if you would like to specify your own color
+%\definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text - uncomment and modify
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+% If you would like to change the social information separator from a pipe (|)
+%to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} 
+
+%---------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%---------------------------------------------------------------------
+
+\name{Antonio}{Salvucci}
+\dob{Latina (IT) on July 13th, 1983}
+\mobile{(+39) 327-76-99-320}
+\email{s4lb04@gmail.com}
+\gitlab{salvucci}
+\googleScholar{https://scholar.google.it/citations?user=xhzjY6kAAAAJ\&hl=en}
+\orcid{https://orcid.org/0000-0003-4876-2613}
+\linkedin{antonio-salvucci}
+\skype{s4lb04}
+\address{Address: Chemin de la Ramaz, 116 - 01630 Sergy (FR)}
+\position{Physics Ph.D.}
+
+%---------------------------------------------------------------------
+%	RECIPIENT/POSITION/LETTER INFORMATION
+%	All of the below lines must be filled out
+%---------------------------------------------------------------------
+
+%The company being applied to
+\recipient{SOPHiA GENETICS}{
+  \vspace{-0.6em}Rue du Centre 172, Saint Sulpice (CH)}
+% The date on the letter, default is the date of compilation
+\letterdate{Sergy, \monthyeardate\today}
+
+%Letter Title
+\lettertitle{Job Application for C++ Software Developer
+  (\href{https://jobs.lusk.io/sophia-genetics-sa/c-software-developer-interested-in-genomics-applications-lausanne-switzerland-3f514ea0}{\textbf{\color{awesome!40!gray}{JobRef}}})
+}
+
+% How the letter is opened
+\letteropening{Dear Hiring Manager,}
+
+% How the letter is closed
+\letterclosing{Sincerely,} 
+
+%\letterenclosure[Attached]{Curriculum Vitae} % Any enclosures with the letter
+
+% Specify the letter footer with 3 arguments: (<left>, <center>, <right>),
+% leave any of these blank if they are not needed
+\makecvfooter{\monthyeardate\today}{Antonio Salvucci~~~·~~~Cover Letter}{} 
+  
+%-------------------------------------------------------------------------
+
+\begin{document}
+\makecvheader % Print the header
+\makelettertitle % Print the title
+
+%------------------------------------------------------------------------
+%	LETTER CONTENT
+%------------------------------------------------------------------------
+
+\begin{cvletter}
+
+  I am writing to express my interest in the C++ Software Developer position at
+  your company (St. Sulpice headquarter). I learned about your company through
+  the LinkedIn social network, and after visiting your website, I have immersed
+  myself in your groundbreaking work in the data analytics solutions to support
+  healthcare professionals.
+
+  I am a physicist by education, with a strong passion for software programming
+  and information technology. For almost a decade, I have been working as
+  researcher in the field of particle physics within the international
+  collaboration of the ATLAS Experiment at CERN. I am now looking to transition
+  in the private sector to grow as a professional and contribute more directly
+  to social wealth. I matured solid skills as both software developer and data
+  analyst:
+  \begin{itemize}
+  \item[-] I developed software algorithms, making use of object oriented
+    programming (mainly C++) and scripting languages (mainly Python). I
+    designed my algorithms both for parallel and for distributed systems;
+  \item[-] I analysed a large amount of data (50 PB/year produced by the
+    CERN LHC) and extracted meaning from they by using statistical tools and
+    machine learning techniques;
+  \item[-] I am an advanced Linux user with system administration know-how and
+    proficient bash scripting skills;
+  \item[-] I am an effective debugger and optimiser, and I am adept at
+    implementing strategic workflows to run functional tests for performance
+    improvement.
+  \end{itemize}
+  I invite you to take a look at my public gitlab profile
+  (gitlab.cern.ch/salvucci).
+  
+  I have a solid academic foundation and a strong passion for boosting
+  innovation through information technology and data analysis. I am thrilled by
+  the opportunity of measuring my technical knowledge in the application fields
+  of bio-informatics and genomics. I am an enthusiastic team-player as well as
+  an hard-worker, who sees opportunities into challenges.
+  
+  I am confident my expertise in software programming and data analysis, as well
+  as my mindset and genuine interest, make me a great candidate for this
+  opening. I would much appreciate the opportunity to contribute to your
+  ongoing growth and continued success.
+
+  I would be delighted to meet you in person at your earliest convenience.
+  I look forward to discussing this position in more details and sharing more
+  about myself and previous experience.
+
+  Should you have any question or need further further information, please do
+  not hesitate to contact me.
+
+  Thank you for your consideration.
+  
+\end{cvletter}
+ 
+%----------------------------------------------------------------------------
+
+\makeletterclosing % Print the signature and enclosures
+
+\end{document}

@@ -1,0 +1,283 @@
+%-----------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-----------------------------------------------------------------------------
+\newcommand*{\TEXPATH}{classes/}
+\documentclass[11pt, a4paper]{\TEXPATH awesome-cv}
+\usepackage[english]{babel}
+% A4 paper size by default, use 'letterpaper' for US letter
+
+\geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm}
+% Configure page margins with geometry
+
+%\fontdir[fonts/] % Specify the location of the included fonts
+
+% Color for highlights
+\colorlet{awesome}{awesome-emerald} % Default colors include: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis,
+%awesome-concrete, awesome-darknight
+%\definecolor{awesome}{HTML}{CA63A8} % Uncomment if you would like to specify your own color
+
+% Colors for text - uncomment and modify
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+% If you would like to change the social information separator from a pipe (|)
+%to something else
+
+\newcommand{\custItem}{\textbf{-}}
+\newlength\widest
+\settowidth\widest{ii}
+\newcommand{\Achieve}{\underline{\color{graytext}{\textbf{Achievements}}}}
+%--------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%--------------------------------------------------------------------------
+
+\photo[circle,edge,right]{picture}
+\name{Antonio}{Salvucci}
+\dob{Latina (IT) on July 13th, 1983}
+\mobile{(+39) 327-76-99-320}
+\email{s4lb04@gmail.com}
+\gitlab{salvucci}
+\googleScholar{https://scholar.google.it/citations?user=xhzjY6kAAAAJ\&hl=en}
+\orcid{https://orcid.org/0000-0003-4876-2613}
+\linkedin{antonio-salvucci}
+\skype{s4lb04}
+\address{Address: Chemin de la Ramaz, 116 - 01630 Sergy (FR)}
+\position{Physics Ph.D.}
+
+\quote{
+  A tenacious data scientist, with a background and a Ph.D. in particle physics,
+  experienced at working in teams and independently in the world’s largest
+  laboratory for high-energy physics research, CERN. Skilled software developer
+  with an analytical mindset. Experienced in managing projects and resources,
+  turning problems into opportunities, and extract meaning from data. On the
+  lookout for exciting new challenges.
+}
+
+\makecvfooter{\monthyeardate\today}{Antonio Salvucci~~~·~~~Résumé}{\thepage}
+% Specify the letter footer with 3 arguments: (<left>, <center>, <right>),
+%leave any of these blank if they are not needed
+%-------------------------------------------------------------------------
+
+%usufel definition
+\DeclareSIUnit\pb{\pico\barn}
+\DeclareSIUnit\fb{\femto\barn}
+\DeclareSIUnit\cm{\centi\metre}
+\DeclareSIUnit\mum{\micro\metre}
+\DeclareSIUnit\mm{\milli\metre}
+\DeclareSIUnit\mrad{\micro\radian}
+
+% define conditions
+\newif\ifAddAnnex
+\newif\ifResearch
+\newif\ifAddContacts
+\newif\ifAddInterest
+
+\Researchfalse
+\AddAnnexfalse
+\ifResearch
+\AddContactsfalse
+\AddInterestfalse
+\else
+\AddContactsfalse
+\AddInteresttrue
+\fi
+
+\newcommand{\CurStatDet}{
+  \begin{minipage}{0.49\textwidth}
+    \begin{itemize}[labelwidth=\the\widest,align=right,leftmargin=!,labelsep=1pt,
+    noitemsep]
+    \item[\custItem] Main software developer, team leader and paper author for
+      two analysis projects (search for new physics signals and Higgs boson
+      properties measurements)
+    \item[\custItem] Supervision of Master and PhD students
+    \end{itemize}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.49\textwidth}
+    \begin{itemize}[labelwidth=\the\widest,align=right,leftmargin=!,labelsep=1pt,noitemsep]
+    \item[\custItem] Responsible for data simulation, modeling and validation
+      using Monte Carlo (MC) generators
+    \item[\custItem] \emph{MC production manager}: coordination and support of
+      MC production for all Higgs analyses in ATLAS
+    \end{itemize}
+  \end{minipage}
+  \vspace{0.4em}
+  
+  \noindent \Achieve: 3 papers in peer-reviewed journals
+  (\scriptsize{links: \href{https://journals.aps.org/prd/abstract/10.1103/PhysRevD.98.092008}{\textcolor{awesome-emerald}{a}},
+  \href{https://link.springer.com/article/10.1007/JHEP10(2017)132}{\textcolor{awesome-emerald}{b}},
+  \href{https://link.springer.com/article/10.1140/epjc/s10052-016-4385-1}{\textcolor{awesome-emerald}{c}}}); 2 talks and 1 poster at international conferences.
+}
+\newcommand{\JuniorScientist}{
+  \begin{minipage}{0.49\textwidth}
+    \begin{itemize}[labelwidth=\the\widest,align=right,leftmargin=!,labelsep=1pt,noitemsep]
+    \item[\custItem] Main software developer and main analyser for the Higgs
+      boson properties measurements
+    \end{itemize}
+  \end{minipage}
+  \begin{minipage}{0.49\textwidth}
+    \begin{itemize}[labelwidth=\the\widest,align=right,leftmargin=!,labelsep=1pt,noitemsep]
+    \item[\custItem] Responsible for data simulation, modeling and validation
+    \item[\custItem] Supervision of Master students
+    \end{itemize}
+  \end{minipage}
+  \vspace{0.4em}
+  
+  \noindent \Achieve: 4 papers in peer-reviewed journals
+  (\scriptsize{links:
+    \href{https://link.springer.com/article/10.1140/epjc/s10052-015-3685-1}{\textcolor{awesome-emerald}{d}},
+  \href{https://journals.aps.org/prd/abstract/10.1103/PhysRevD.91.012006}{\textcolor{awesome-emerald}{e}},
+  \href{http://www.sciencedirect.com/science/article/pii/S0370269314007126}{\textcolor{awesome-emerald}{f}},
+  \href{http://journals.aps.org/prd/abstract/10.1103/PhysRevD.90.052004}{\textcolor{awesome-emerald}{g}}}); 1 talk at international conference.
+}
+\newcommand{\Phd}{
+  \begin{minipage}{0.49\textwidth}
+    \begin{itemize}[labelwidth=\the\widest,align=right,leftmargin=!,labelsep=1pt,
+        noitemsep]
+    \item[\custItem] Main software developer and main analyser for two analysis teams
+      (Higgs boson discovery/properties, detector performance)
+    \item[\custItem] Responsible for MC production and validation
+    \end{itemize}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.49\textwidth}
+    \begin{itemize}[labelwidth=\the\widest,align=right,leftmargin=!,labelsep=1pt,noitemsep]
+    \item[\custItem] Tester of a new parallel computing approach using
+      Proof-on-Demand on ATLAS computing clusters
+    \item[\custItem] Assistant for physics laboratories and C++ programming
+      course
+    \end{itemize}
+  \end{minipage}
+  \vspace{0.4em}
+  
+  \noindent \Achieve: parallel computing and machine learning
+  techniques; contribution to 9 papers in peer-reviewed journals
+  (\scriptsize{links: 
+  \href{http://link.springer.com/article/10.1140\%2Fepjc\%2Fs10052-014-3130-x}{\textcolor{awesome-emerald}{h}},
+  \href{link.springer.com/article/10.1140/epjc/s10052-014-3034-9}{\textcolor{awesome-emerald}{i}},
+  %\href{http://www.sciencedirect.com/science/article/pii/S0370269313006369}{\textcolor{awesome-emerald}{j}},
+  \href{http://www.sciencedirect.com/science/article/pii/S0370269313006527}{\textcolor{awesome-emerald}{j}},
+  \href{http://www.sciencedirect.com/science/article/pii/S037026931200857X}{\textcolor{awesome-emerald}{k}},
+  \href{http://journals.aps.org/prd/abstract/10.1103/PhysRevD.86.032003}{\textcolor{awesome-emerald}{l}},
+  \href{https://www.epj-conferences.org/articles/epjconf/abs/2012/10/epjconf_hcp2012_12039/epjconf_hcp2012_12039.html}{\textcolor{awesome-emerald}{m}},
+  \href{https://www.sif.it/riviste/sif/ncc/econtents/2013/036/06/article/12}{\textcolor{awesome-emerald}{n}},
+  \href{http://iopscience.iop.org/1742-6596/513/3/032102}{\textcolor{awesome-emerald}{o}}});
+  4 talks and 2 posters at international conferences.
+}
+\newcommand{\CERN}{Software developer for two analysis teams (detector
+  performance and search for new physics signals)}
+\newcommand{\Master}{
+  \begin{minipage}{0.49\textwidth}
+  \begin{itemize}[labelwidth=\the\widest,align=right,leftmargin=!,labelsep=1pt,noitemsep]
+  \item[\custItem] Software developer and statistical treatment for limit setting
+  \item[\custItem] Detector performance and MC production and validation
+  \end{itemize}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.49\textwidth}
+    \begin{itemize}[labelwidth=\the\widest,align=right,leftmargin=!,labelsep=1pt,noitemsep]
+    \item[\custItem] Setup of a small local computing cluster and tester of the
+      ATLAS Tier2 computing cluster in Frascati
+    \end{itemize}
+  \end{minipage}
+}
+\newcommand{\PhdThesis}{\textbf{Thesis}: The Higgs boson in the
+  $H\to ZZ^{∗}\to 4\ell$ decay channel with the ATLAS detector at the LHC}
+\newcommand{\MsThesis}{\textbf{Thesis}: Search for new gauge boson in
+  collisions $pp\to Z^{\prime}+X\to\mu^{+}\mu^{-}+X$ with the ATLAS detector at
+  the LHC}
+\newcommand{\BsThesis}{\textbf{Thesis}: A new experimental limit for the
+  Pauli Exclusion Principle for electrons}
+\newcommand{\skipV}{\vspace{0.0em}}
+\ifResearch
+\renewcommand{\CurStatDet}{Software developer, analysis contact and publications
+  editor in the context of the search for new possible heavy neutral
+  lepton-flavor violating ($LFV$) dilepton final states with the ATLAS
+  experiment at the LHC. Software developer, analysis contact and internal
+  documentation editor for the Higgs boson fiducial and differential cross
+  section measurements in the $H\to ZZ^{∗}\to 4\ell$ decay channel. Responsible
+  for data simulation and modeling using Monte Carlo (MC) generators: I
+  provided user support for the production of official MC sample with the ATLAS
+  Higgs group (role of \emph{Higgs MC production manager}). Supervisor of
+  Master and PhD students.}
+\renewcommand{\JuniorScientist}{Software developer and main analyser for Higgs
+  boson properties measurements in the $H\to ZZ^{∗}\to 4\ell$ decay channel with
+  the ATLAS experiment at the LHC. I lead my analysis team for the analysis
+  preparation for the LHC RUNII data taking: main activities include Monte
+  Carlo generation and validation at \SI{13}{\tera\electronvolt}, selection
+  optimisation and porting of the analysis framework to the new ATLAS RUNII
+  data format (xAODs).}
+\renewcommand{\Phd}{Main analyser and framework developer in the context of the
+  Higgs boson search and properties measurements (couplings, spin) in the
+  $H\to ZZ^{∗}\to 4\ell$ decay channel with the ATLAS experiment at the LHC.
+  I optimised the selection criteria to reject background events and maximize
+  the signal significance by improving the kinematic selection and applying
+  machine learning techniques. I evaluated the ATLAS tracking system performance
+  and measured the muon momentum resolution of the ATLAS detector. I was
+  responsible for the Monte Carlo generation and validation in the $H\to ZZ^{∗}$
+  group. I also investigated the usage of Proof-on-Demand (PoD) to enable
+  PROOF-based analyses on ATLAS computing clusters. I was assistant for
+  physics laboratories and C++ programming course.}
+\renewcommand{\CERN}{I evaluated the muon momentum resolution of the ATLAS
+  detector at the LHC and searched for a new heavy neutral resonance
+  ($Z^{\prime}$) decaying in a muon pair.}
+\renewcommand{\Master}{Software developer for the evaluation of the discovery
+  potential of the ATLAS experiment for a possible new heavy neutral resonance
+  ($Z^{\prime}$) decaying in a muon pair: I set limits on the production cross
+  section and studied decay properties using MC simulation and toy-experiments.
+  I evaluated the performance of the ATLAS tracking system, such as momentum
+  resolution and tracking and trigger efficiencies. I also measured the impact
+  of detector mis-alignments on physics analyses and produced and validated
+  Monte Carlo samples.}
+\renewcommand{\PhdThesis}{\textbf{Thesis}: The Higgs boson in the
+  $H\to ZZ^{∗}\to 4\ell$ decay channel with the ATLAS detector at the LHC}
+\renewcommand{\MsThesis}{\textbf{Thesis}: Search for new gauge boson in
+  collisions $pp\to Z^{\prime}+X\to\mu^{+}\mu^{-}+X$ with the ATLAS detector at
+  the LHC}
+\renewcommand{\BsThesis}{\textbf{Thesis}: A new experimental limit for the
+  Pauli Exclusion Principle for electrons}
+\renewcommand{\skipV}{\vspace{0.0em}}
+\fi
+
+\begin{document}
+
+\makecvheader % Print the header
+%--------------------------------------------------------------------------
+% CV/RESUME CONTENT
+% Each section is imported separately, open each file in turn to modify content
+%--------------------------------------------------------------------------
+
+\input{skills.tex}
+\input{experience.tex}
+\ifAddContacts
+\input{contacts.tex}
+\fi
+\input{education.tex}
+\ifResearch
+\input{talks_posters.tex}
+\input{rolesATLAS.tex}
+\clearpage
+\input{paperConf_Notes.tex}
+\clearpage
+\input{researchExp.tex}
+\fi
+\ifResearch
+\clearpage
+\input{researchInt.tex}
+\else
+\ifAddInterest
+\input{interests.tex}
+\fi
+\fi
+\ifAddAnnex
+\clearpage
+\input{annex}
+\fi
+
+%--------------------------------------------------------------------------
+
+\end{document}
