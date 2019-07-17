@@ -1,4 +1,4 @@
-#    Curriculum Vitae : power by LaTex  #
+#    Curriculum Vitae : powered by LaTex  #
 
 #    Description   #
 
