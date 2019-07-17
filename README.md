@@ -25,6 +25,6 @@ Makefile options:
 
 SpellChecker options:
 
-   --file   -> specify the tex file name: default is search in folder
-   --folder -> specify folder: default is working folder
-   --lang   -> specify language: default is en
+   - --file   -> specify the tex file name: default is search in folder
+   - --folder -> specify folder: default is working folder
+   - --lang   -> specify language: default is en
