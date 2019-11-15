@@ -1,8 +1,6 @@
 #    Curriculum Vitae : powered by LaTex  #
 
-#    Description   #
-
-This project contains the latex template CV, by using awesome class, modified
+This repository contains the latex template CV, by using awesome class, modified
 for my needs.
 
    - create the resume pdf file (CV_ASalvucci.pdf)
