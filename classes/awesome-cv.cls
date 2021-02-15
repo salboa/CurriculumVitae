@@ -723,6 +723,25 @@
   \end{flushleft}
 }
 
+% Define an environment for cvcertificates
+\newenvironment{cvcertificates}{%
+  \begin{center}
+}{%
+  \end{center}
+}
+% Define an entry of cv information
+% Usage: \cvcertificates{<source>}{<title>}{<date>}{<link>}
+\newcommand*{\cvcertificate}[4]{%
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+    \ifempty{#2#3}
+      {\entrypositionstyle{#1} & \entrydatestyle{#4}     \\}
+      {\entrytitlestyle{#2}    & \entrylocationstyle{#3} \\
+       \entrypositionstyle{#1} & \entrydatestyle{#4}     \\}
+  \end{tabular*}
+}
+
 % Define an environment for cvtalks
 \newenvironment{cvtalks}{%
   \begin{center}
