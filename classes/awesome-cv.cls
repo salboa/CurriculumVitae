@@ -716,11 +716,11 @@
       {\entrytitlestyle{#2}    & \entrylocationstyle{#3} \\
        \entrypositionstyle{#1} & \entrydatestyle{#4}     \\}
   \end{tabular*}
-  \vspace{-1.1em}
-  
-  \begin{flushleft}
-    \entrypositionstyle{#5}
-  \end{flushleft}
+  %\vspace{-1.1em}
+  %
+  %\begin{flushleft}
+  %  \entrypositionstyle{#5}
+  %\end{flushleft}
 }
 
 % Define an environment for cvcertificates
@@ -797,13 +797,13 @@
     {}
     {\lettertitlestyle{\@lettertitle} \\}
     
-  \vspace{-1.2em}\lettertextstyle{\@letteropening} 
+  \vspace{-1.4em}\lettertextstyle{\@letteropening}
 }
 
 % Define a closing of the cover letter
 % Usage: \makeletterclosing
 \newcommand*{\makeletterclosing}{%
-  \vspace{3.4mm}
+  \vspace{0.1em}
   \lettertextstyle{\@letterclosing} \\\\
   \letternamestyle{\@firstname\ \@lastname}
   \ifthenelse{\isundefined{\@letterenclosure}}
