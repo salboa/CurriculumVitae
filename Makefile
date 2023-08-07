@@ -31,7 +31,7 @@ RefLet: $(REFLET).tex
 
 SpellCheck:
 	@echo " Executing Spell Checker ...."
-	python spellCheck.py
+	python3 spellCheck.py
 
 run_all: SpellCheck CV Cover clean
 
